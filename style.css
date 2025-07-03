@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #c94b4b, #4b134f);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 800px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.player {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.name {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.current {
+  background-color: #e74c3c;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.current p {
+  font-size: 1.2rem;
+}
+
+.current-score {
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.dice {
+  width: 100px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn--new {
+  top: 10%;
+}
+
+.btn--roll {
+  top: 55%;
+}
+
+.btn--hold {
+  top: 65%;
+}
+
+.hidden {
+  display: none;
+}
